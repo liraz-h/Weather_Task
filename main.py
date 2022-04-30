@@ -70,9 +70,9 @@ def create_country_agg_tbl():
     # For each time we update the weather_data file, we need to calculate the new aggregations fields in the
     # country_agg file. I read all the data from weather_data and calculate the new aggregations.
     weather_data_df = pd.read_csv('weather_data.csv')
-    country_agg_df = weather_data_df.groupby('country').apply(temps_agg)
+    country_agg_df = weather_data_df.groupby(['country', 'applicable_date']).apply(temps_agg)
     country_agg_df['timestamp'] = strftime("%Y-%m-%d %H:%M:%S")
-    country_agg_df.to_csv('country_agg.csv', index='country',  header=True)
+    country_agg_df.to_csv('country_agg.csv', index=['country', 'applicable_date'],  header=True)
 
 
 def temps_agg(df):
