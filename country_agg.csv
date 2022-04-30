@@ -1,4 +1,4 @@
-country,daily_avg_min_temp,daily_min_temp,daily_avg_max_temp,daily_max_temp,timestamp
-FR,6.6,4.2,21.525,22.9,2022-04-30 18:23:31
-UK,3.1333333333333333,2.9,17.5,18.8,2022-04-30 18:23:31
-US,7.4,3.1,22.275,32.2,2022-04-30 18:23:31
+country, applicable_date,daily_avg_min_temp,daily_min_temp,daily_avg_max_temp,daily_max_temp,timestamp
+FR,2022-04-30,6.6,4.2,21.549999999999997,22.9,2022-04-30 22:43:29
+UK,2022-04-30,2.9,2.9,16.85,16.9,2022-04-30 22:43:29
+US,2022-04-30,7.4,3.1,22.35,32.5,2022-04-30 22:43:29
