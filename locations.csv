@@ -1,0 +1,12 @@
+id,country,location,metaweather_id,created_at
+1,UK,london,44418,2020-06-01 0:00
+2,UK,manchester,28218,2020-06-01 0:00
+3,UK,liverpool,26734,2020-06-01 0:00
+4,US,new york,2459115,2020-06-01 0:00
+5,US,san francisco,2487956,2020-06-01 0:00
+6,US,las vegas,2436704,2020-06-01 0:00
+7,FR,paris,615702,2020-06-01 0:00
+8,FR,marseille,610264,2020-06-01 0:00
+9,FR,lille,608105,2020-06-01 0:00
+10,FR,lyon,609125,2020-06-01 0:00
+11,US,manchester,2444674,2020-06-01 0:00

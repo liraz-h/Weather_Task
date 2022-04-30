@@ -1,0 +1,15 @@
+# Q2
+
+select location, applicable_date, temp_diff
+from
+    (select location, applicable_date, temp_diff, min(temp_diff) over (partition by applicable_date) as min_temp_diff
+    from
+        (select location, applicable_date, abs(avg_max_temp-daily_max_temp) as temp_diff
+        from weather_data
+        left join
+            (select date, avg(daily_avg_max_temp) as avg_max_temp
+            from country_agg
+            group by date) as avg_max_temp_tbl
+        on weather_data.applicable_date = avg_max_temp_tbl.date)
+            as diff_temps_tbl) as results_tbl
+where temp_diff = min_temp_diff
